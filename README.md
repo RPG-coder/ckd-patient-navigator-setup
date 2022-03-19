@@ -37,8 +37,8 @@ This file contains instructions for setting up a docker container running the CK
 
 <hr/>
 
-##### GIT source backend: https://www.github.com/RPG-coder
-##### GIT source frontend: https://www.github.com/sp2728
+##### GIT source backend: https://www.github.com/RPG-coder/bayer-njit-backend
+##### GIT source frontend: https://www.github.com/sp2728/bayer-njit-frontend
 ###### Docker image creator: Rahul Gautham Putcha
 ###### Email: rp39@njit.edu
 
