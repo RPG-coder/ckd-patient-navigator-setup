@@ -7,6 +7,15 @@
 ### Description
 This file contains instructions for setting up a docker container running the CKD Patient-Navigator.
 
+## Minimum Requirement
+- Amazon Linux 2 or Ubuntu Server 18.04 or 20.04 EC2 server
+- Instance Type: t2.medium (4GiB Memory) or better
+- Storage: 16GB or more
+- Security Group with Inbound rules as: 
+ - SSH for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+ - HTTP port 80 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+ - TCP port 3000 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+
 ### Instructions:
 1. What you need before running,
   * Install Git
