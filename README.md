@@ -7,7 +7,7 @@
 ### Description
 This file contains instructions for setting up a docker container running the CKD Patient-Navigator.
 
-## Minimum Requirement
+### Minimum Requirement
 - Amazon Linux 2 or Ubuntu Server 18.04 or 20.04 EC2 server
 - Instance Type: t2.medium (4GiB Memory) or better
 - Storage: 16GB or more
