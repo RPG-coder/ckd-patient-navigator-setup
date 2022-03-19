@@ -33,7 +33,7 @@ This file contains instructions for setting up a docker container running the CK
 3. After running a script from above:
   - By default **run.sh** script is configured to share your **website** on your EC2 HTTP port (or equivalently the port no. 80).
   - By default **run.sh** script is configured to share your **backend** on your EC2 TCP port 3000.
-  - For more information on setting up the Security group for EC2, please visit [Security group for EC2](https://youtu.be/PFfDq9PwTkg)
+  - For more information on setting up the Security group for EC2, please visit [Security group for EC2](https://www.youtube.com/watch?v=PFfDq9PwTkg)
 
 <hr/>
 
