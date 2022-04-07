@@ -18,6 +18,7 @@ This file contains instructions for setting up a docker container running the CK
 
 ### Security Group Settings
 For more details on setting the security group setting, please view the image presented in the link below
+
 [Security Group setting](https://drive.google.com/file/d/1wT9QNsBgV9w0Q-DWWG-xEdnmnQj_HMHr/view?usp=sharing)
 
 ### Instructions:
