@@ -48,7 +48,7 @@ then
 fi
 
 
-sudo docker run -dit -p 80:80 -p 3000:3000 -v "$(pwd)/res":/temp/ bayer-njit-ckd4ec2
+sudo docker run -dit -p 8980:80 -p 8979:3000 -v "$(pwd)/res":/temp/ bayer-njit-ckd4ec2
 
 echo "Use the status script to check the status of you system:"
 echo "$ sh status.sh"
