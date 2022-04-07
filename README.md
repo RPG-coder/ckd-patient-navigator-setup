@@ -7,6 +7,15 @@
 ### Description
 This file contains instructions for setting up a docker container running the CKD Patient-Navigator.
 
+### Minimum Requirement
+- Amazon Linux 2 or Ubuntu Server 18.04 or 20.04 EC2 server
+- Instance Type: t2.medium (4GiB Memory) or better
+- Storage: 16GB or more
+- Security Group with Inbound rules as: 
+ - SSH for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+ - HTTP port 80 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+ - TCP port 3000 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
+
 ### Instructions:
 1. What you need before running,
   * Install Git
@@ -33,12 +42,12 @@ This file contains instructions for setting up a docker container running the CK
 3. After running a script from above:
   - By default **run.sh** script is configured to share your **website** on your EC2 HTTP port (or equivalently the port no. 80).
   - By default **run.sh** script is configured to share your **backend** on your EC2 TCP port 3000.
-  - For more information on setting up the Security group for EC2, please visit [Security group for EC2](https://youtu.be/PFfDq9PwTkg)
+  - For more information on setting up the Security group for EC2, please visit [Security group for EC2](https://www.youtube.com/watch?v=PFfDq9PwTkg)
 
 <hr/>
 
-##### GIT source backend: https://www.github.com/RPG-coder
-##### GIT source frontend: https://www.github.com/sp2728
+##### GIT source backend: https://www.github.com/RPG-coder/bayer-njit-backend
+##### GIT source frontend: https://www.github.com/sp2728/bayer-njit-frontend
 ###### Docker image creator: Rahul Gautham Putcha
 ###### Email: rp39@njit.edu
 

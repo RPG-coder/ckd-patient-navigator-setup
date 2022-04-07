@@ -4,7 +4,7 @@
 ## Under Guidance of Professor. Zhi Wei
 ## Team: Jianlan Ren, Rahul Gautham Putcha, Sai Kiran Pocham, Jiawei Wang
 ## Details:
-##   Use this file for Amazon Linux 2 platform specific intallations
+##   Use this file for Ubuntu Server/Debian platforms specific intallations
 ##   of CKD Patient Navigation system.
 ##              DO THIS ON YOUR LOCAL SYSTEM
 ##   <<<<<<<<<<<< Requires Root permissions >>>>>>>>>>>>>>>>
