@@ -16,6 +16,10 @@ This file contains instructions for setting up a docker container running the CK
  - HTTP port 80 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
  - TCP port 3000 for IPV4 Anywhere (0.0.0.0/0) & IPV6 Anywhere (::/0)
 
+### Security Group Settings
+For more details on setting the security group setting, please view the image presented in the link below
+[Security Group setting](https://drive.google.com/file/d/1wT9QNsBgV9w0Q-DWWG-xEdnmnQj_HMHr/view?usp=sharing)
+
 ### Instructions:
 1. What you need before running,
   * Install Git
