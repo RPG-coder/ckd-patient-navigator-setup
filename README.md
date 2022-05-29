@@ -74,7 +74,7 @@ For more details on setting the security group setting, please view the image pr
 
   - sh mysql_migrate.sh # note this script must be executed in the folder containing the "res" folder
 
-
+<hr/>
 
 ##### GIT source backend: https://www.github.com/RPG-coder/bayer-njit-backend
 ##### GIT source frontend: https://www.github.com/sp2728/bayer-njit-frontend
