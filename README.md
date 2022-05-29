@@ -51,6 +51,31 @@ For more details on setting the security group setting, please view the image pr
 
 <hr/>
 
+## Database Backups (for MySQL/Docker)
+- If you want to backup you current database tables, then execute below script:
+  - sh mysql_backup.sh # note this script must be executed in the folder containing the res folder
+- This will create a "mysql_backup" folder inside the "res" folder along with automatically moving all older versioned .sql database backup files into this folder.
+- After moving this script will also create a new .sql backup of the database used by the currently running CKD Population Navigator application.
+- In other words, this script will ultimately create a .sql file (patient_database_YYYY-MM-DD-hh-mm-ss.sql).
+
+## Database Migrate (for MySQL/Docker)
+- IMPORTANT NOTE: The script in this section will delete the older database before migrating. It is advised to create a backup mentioned in above section before hand and have the copy of the .sql result product file from the backup in a safe location, before proceeding. 
+- If you want to migrate to older database version a .sql backup dump file (inside the "mysql_backup" folder) or add-on new tables from a custom .sql along with the tables from your current database, then:
+  - Create a backup of current database by the instruction mentioned in above section. This will create a .sql file (patient_database_YYYY-MM-DD-hh-mm-ss.sql). (Recommended: If necessary, please create a copy of this in a seperate folder)
+  - If you are migrating database from newer to a older version?
+    - (Recommended: After having a copy of current .sql backup) 
+    - Replace the current patient_database_YYYY-MM-DD-hh-mm-ss.sql backup with your patient_database_YYYY-MM-DD-hh-mm-ss.sql backup file of choice from "mysql_backup" folder  
+    - (Delete current backup & Place another patient_database_YYYY-MM-DD-hh-mm-ss.sql file). 
+    - IMPORTANT: Make sure the LATEST/CURRENT or MULTIPLE patient_database_YYYY-MM-DD-hh-mm-ss.sql are not present in the res folder when migrating database to a older version of patient_database_YYYY-MM-DD-hh-mm-ss.sql backup.
+  - If you are introducing custom tables into the mysql application database?
+    - This can be due to several reasons (Few ex: Introducing new functionalities on API, Data Compliance reasons requiring tables data to be present within same database, etc)
+    - Place (Copy) all of your custom .sql file inside the "res" folder
+    - Make sure you have your desired patient_database_YYYY-MM-DD-hh-mm-ss.sql within the "res" before doing migration.
+
+  - sh mysql_migrate.sh # note this script must be executed in the folder containing the "res" folder
+
+
+
 ##### GIT source backend: https://www.github.com/RPG-coder/bayer-njit-backend
 ##### GIT source frontend: https://www.github.com/sp2728/bayer-njit-frontend
 ###### Docker image creator: Rahul Gautham Putcha
