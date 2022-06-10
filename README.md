@@ -1,11 +1,43 @@
-# README Manual for CKD Patient-Navigator system
+# README Manual for CKD Population Navigator system
 ## End to End deployment on a EC2 server 
 ###### Written by Rahul Gautham Putcha
 
-**Purpose**: Complete deployment of CKD Patient Navigator system on a EC2 server
+**Purpose**: Complete deployment of CKD Population Navigator system on a EC2 server
 
 ### Description
-This file contains instructions for setting up a docker container running the CKD Patient-Navigator.
+This file contains instructions for setting up a docker container running the CKD Population Navigator.
+
+### General Script Usage
+Few scripts for CKD Population Navigator
+
+1. Initial setup 
+  i. Initial setup on RHEL/Amazon Linux 2
+     
+     $ sh rhel_run.sh 
+
+  ii. Initial setup on Ubuntu OS
+     
+     $ sh debian_run.sh
+
+  iii. If you want to check the status of your initial application setup without via async script call, use:
+     
+     $ sh status.sh # after running a debian_run.sh or rhel_run.sh in background 
+
+2. Docker clean: use this only when you find error in Initial setup due to running of an older version of CKD Population Navigator app
+   
+   $ sh docker_clean.sh
+
+3. Application ( Backend + Frontend ) update
+   
+   $ sh ckd_update.sh
+
+4. Database Backup: This will create a new .sql file for the current database in ./res folder. Also, all older versions of .sql backup files are maintained in ./res/mysql_backup folder 
+   
+   $ sh mysql_backup.sh
+
+5. Database Migrate: Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
+   
+   $ sh mysql_migrate.sh
 
 ### Minimum Requirement
 - Amazon Linux 2 or Ubuntu Server 18.04 or 20.04 EC2 server
