@@ -3,12 +3,15 @@
 ## Make sure to have backup 
 ## ---------------------- WARNING ----------------------
 
-## Created by Rahul Gautham Putcha
-## Email: rp39@njit.edu
+## Details: Database Migrate
+## USAGE: Use this script for applying an older database backup (.sql) to a current docker application running the database (.sql)
+## Requirement: Before Running, make sure you have .sql file you want to update in the /res folder
+
 ## Under Guidance of Professor. Zhi Wei
 ## Team: Jianlan Ren, Rahul Gautham Putcha, Sai Kiran Pocham, Jiawei Wang
-## Details: Database Migrate
-## Requirement: Before Running, make sure you have .sql file you want to update in the /res folder
+## Created by Rahul Gautham Putcha
+## Email: rp39@njit.edu
+
 
 if [ ! -f $(pwd)'/res/docker.info' ]
 then
