@@ -10,7 +10,7 @@ This file contains instructions for setting up a docker container running the CK
 ### General Script Usage
 Few scripts for CKD Population Navigator
 
-1. Initial setup 
+1. Initial setup [Video_Demo](https://youtu.be/gWRzeiYaZBo)
 
   i. Initial setup on RHEL/Amazon Linux 2
      
@@ -32,11 +32,11 @@ Few scripts for CKD Population Navigator
   
     $ sh ckd_update.sh
 
-4. Database Backup: This will create a new .sql file for the current database in ./res folder. Also, all older versions of .sql backup files are maintained in ./res/mysql_backup folder 
+4. Database Backup [VideoDemo](https://youtu.be/bEpSrraX-V0): This will create a new .sql file for the current database in ./res folder. Also, all older versions of .sql backup files are maintained in ./res/mysql_backup folder 
    
    $ sh mysql_backup.sh
 
-5. Database Migrate: Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
+5. Database Migrate [VideoDemo]([https://youtu.be/bEpSrraX-V0?t=342): Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
    
    $ sh mysql_migrate.sh
 
@@ -55,7 +55,10 @@ For more details on setting the security group setting, please view the image pr
 [Security Group setting](https://drive.google.com/file/d/1wT9QNsBgV9w0Q-DWWG-xEdnmnQj_HMHr/view?usp=sharing)
 
 ### Instructions:
-1. What you need before running,
+
+You can follow this [Video_Demo](https://youtu.be/gWRzeiYaZBo) instead of skimming through the steps below.
+
+1. What you need before running, 
   * Install Git
     - For Amazon Linux 2 server
       - $ sudo yum install -y git
@@ -85,6 +88,9 @@ For more details on setting the security group setting, please view the image pr
 <hr/>
 
 ## Database Backups (for MySQL/Docker)
+
+You can follow this [VideoDemo](https://youtu.be/bEpSrraX-V0) instead of skimming through below content.
+
 - If you want to backup you current database tables, then execute below script:
   - sh mysql_backup.sh # note this script must be executed in the folder containing the res folder
 - This will create a "mysql_backup" folder inside the "res" folder along with automatically moving all older versioned .sql database backup files into this folder.
@@ -92,6 +98,9 @@ For more details on setting the security group setting, please view the image pr
 - In other words, this script will ultimately create a .sql file (patient_database_YYYY-MM-DD-hh-mm-ss.sql).
 
 ## Database Migrate (for MySQL/Docker)
+
+You can follow this [VideoDemo]([https://youtu.be/bEpSrraX-V0?t=342) instead of skimming through below content.
+
 - IMPORTANT NOTE: The script in this section will delete the older database before migrating. It is advised to create a backup mentioned in above section before hand and have the copy of the .sql result product file from the backup in a safe location, before proceeding. 
 - If you want to migrate to older database version a .sql backup dump file (inside the "mysql_backup" folder) or add-on new tables from a custom .sql along with the tables from your current database, then:
   - Create a backup of current database by the instruction mentioned in above section. This will create a .sql file (patient_database_YYYY-MM-DD-hh-mm-ss.sql). (Recommended: If necessary, please create a copy of this in a seperate folder)
