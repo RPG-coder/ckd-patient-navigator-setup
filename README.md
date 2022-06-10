@@ -26,19 +26,19 @@ Few scripts for CKD Population Navigator
 
 2. Docker clean: use this only when you find error in Initial setup due to running of an older version of CKD Population Navigator app
   
-  $ sh docker_clean.sh
+    $ sh docker_clean.sh
 
 3. Application ( Backend + Frontend ) update
   
-  $ sh ckd_update.sh
+    $ sh ckd_update.sh
 
 4. Database Backup: This will create a new .sql file for the current database in ./res folder. Also, all older versions of .sql backup files are maintained in ./res/mysql_backup folder 
    
-  $ sh mysql_backup.sh
+   $ sh mysql_backup.sh
 
 5. Database Migrate: Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
    
-  $ sh mysql_migrate.sh
+   $ sh mysql_migrate.sh
 
 ### Minimum Requirement
 - Amazon Linux 2 or Ubuntu Server 18.04 or 20.04 EC2 server
