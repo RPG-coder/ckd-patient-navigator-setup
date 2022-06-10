@@ -36,7 +36,7 @@ Few scripts for CKD Population Navigator
    
    $ sh mysql_backup.sh
 
-5. Database Migrate [VideoDemo]([https://youtu.be/bEpSrraX-V0?t=342): Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
+5. Database Migrate [VideoDemo](https://youtu.be/bEpSrraX-V0?t=342): Use this to apply database or db table data by custom .sql files in res folder. You can use this to apply any one of older .sql db backup by moving them to res folder before running rhis script.
    
    $ sh mysql_migrate.sh
 
@@ -99,7 +99,7 @@ You can follow this [VideoDemo](https://youtu.be/bEpSrraX-V0) instead of skimmin
 
 ## Database Migrate (for MySQL/Docker)
 
-You can follow this [VideoDemo]([https://youtu.be/bEpSrraX-V0?t=342) instead of skimming through below content.
+You can follow this [VideoDemo](https://youtu.be/bEpSrraX-V0?t=342) instead of skimming through below content.
 
 - IMPORTANT NOTE: The script in this section will delete the older database before migrating. It is advised to create a backup mentioned in above section before hand and have the copy of the .sql result product file from the backup in a safe location, before proceeding. 
 - If you want to migrate to older database version a .sql backup dump file (inside the "mysql_backup" folder) or add-on new tables from a custom .sql along with the tables from your current database, then:
