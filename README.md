@@ -118,6 +118,19 @@ You can follow this [VideoDemo](https://youtu.be/bEpSrraX-V0?t=342) instead of s
 
 <hr/>
 
+### Q/A - Issues Resolved
+
+Issues/Problem's faced by client while setting up the CKD Population Navigator application:
+
+- [Problem 1]() : 
+  - Q. RHEL/Debian_Run.SH file not executed properly because older version of application is blocking and using port 8980 and 8979 at time of setup! How can I fix this?
+  - A. As suggested in the video above, 
+    1. Create a backup of **"res"** folder (RECOMMENDED)
+    2. Run docker_clean.sh script **WARNING -  THIS WILL DELETE ALL DOCKER CONTAINER AND IMAGES FROM THE CKD NAVIGATOR SYSTEM!!!!**
+    3. Then, Run rhel_run.sh or debian_run.sh script for a fresh installation setup.
+
+<hr/>
+
 ##### GIT source backend: https://www.github.com/RPG-coder/bayer-njit-backend
 ##### GIT source frontend: https://www.github.com/sp2728/bayer-njit-frontend
 ###### Docker image creator: Rahul Gautham Putcha
