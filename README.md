@@ -122,7 +122,7 @@ You can follow this [VideoDemo](https://youtu.be/bEpSrraX-V0?t=342) instead of s
 
 Issues/Problem's faced by client while setting up the CKD Population Navigator application:
 
-- [Problem 1]() : 
+- Problem 1 [VideoDemo](https://youtu.be/gUyz95KvkoM) : 
   - Q. RHEL/Debian_Run.SH file not executed properly because older version of application is blocking and using port 8980 and 8979 at time of setup! How can I fix this?
   - A. As suggested in the video above, 
     1. Create a backup of **"res"** folder (RECOMMENDED)
