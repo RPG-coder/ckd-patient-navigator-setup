@@ -28,7 +28,7 @@ Few scripts for CKD Population Navigator
   
     $ sh docker_clean.sh
 
-3. Application ( Backend + Frontend ) update
+3. Application ( Backend + Frontend ) update [VideoDemo](https://youtu.be/gI5rTnyA_mM):
   
     $ sh ckd_update.sh
 
